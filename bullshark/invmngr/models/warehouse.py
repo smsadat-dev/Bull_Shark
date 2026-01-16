@@ -1,12 +1,21 @@
 from django.db import models
 from django.db.models import CharField, DateTimeField, DecimalField, PositiveIntegerField
 
+from models.user import UserModel
 
 # DB model for Warehouse 
 class WareHouseModel(models.Model):
 
     name = CharField(max_length=255)
-    manager = CharField(max_length=255, blank=True)
+
+    manager = models.ForeignKey(
+        UserModel,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        limit_choices_to={"role": "S"}
+    )
+
     capacity = PositiveIntegerField(null=True, blank=True)
 
     # Location records
