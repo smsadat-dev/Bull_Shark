@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import CharField, DateTimeField, DecimalField, ForeignKey, TextField
 
-from bullshark.invmngr.models.category import CategoryModel
+from .category import CategoryModel
 
 # DB model for Product 
 class ProductModel(models.Model):

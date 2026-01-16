@@ -1,8 +1,8 @@
 from django.db import models
 from django.db.models import CharField, DateTimeField, ForeignKey, PositiveIntegerField
 
-from models.product import ProductModel
-from models.warehouse import WareHouseModel
+from .product import ProductModel
+from .warehouse import WareHouseModel
 
 # DB model for Inventory 
 class InventoryModel(models.Model):

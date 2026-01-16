@@ -1,8 +1,8 @@
 from django.db import models
 from django.db.models import AutoField, CharField, DateTimeField, DecimalField, ForeignKey, IntegerField
 
-from models.suppliers import SupplierModel
-from models.warehouse import WareHouseModel
+from .supplier import SupplierModel
+from .warehouse import WareHouseModel
 
 # DB model for Purchase order and Purchase order item table
 class PurchaseOrderModel(models.Model):

@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models import CharField, DateTimeField, DecimalField, PositiveIntegerField
 
-from models.user import UserModel
+from .user import User
 
 # DB model for Warehouse 
 class WareHouseModel(models.Model):
@@ -9,7 +9,7 @@ class WareHouseModel(models.Model):
     name = CharField(max_length=255)
 
     manager = models.ForeignKey(
-        UserModel,
+        User,
         on_delete=models.SET_NULL,
         null=True,
         blank=True,

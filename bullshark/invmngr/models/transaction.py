@@ -1,7 +1,7 @@
 from django.db import models 
 from django.db.models import CharField, DateTimeField, ForeignKey, IntegerField
 
-from models.inventory import InventoryModel
+from .inventory import InventoryModel
 
 class TransactionModel(models.Model):
 
