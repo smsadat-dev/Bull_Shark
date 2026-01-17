@@ -12,10 +12,8 @@ admin.site.site_title = 'Dashboard'
 
 admin.site.register(CategoryModel)
 admin.site.register(InventoryModel)
-admin.site.register(InviteModel)
 admin.site.register(ProductModel)
 admin.site.register(PurchaseOrderModel)
 admin.site.register(SupplierModel)
 admin.site.register(TransactionModel)
 admin.site.register(WareHouseModel)
-admin.site.register(UserAuthProxyModel)

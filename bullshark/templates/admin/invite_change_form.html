@@ -1,0 +1,8 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls %}
+
+{% block submit_buttons_bottom %}
+    <input type="submit" value="Send Invitation" name="_send_invitation" class="default" />
+    <input type="submit" value="Draft Invitation" name="_draft_invitation" />
+    <a href="{% url 'admin:invmngr_invitemodel_changelist' %}" class="button">Cancel</a>
+{% endblock %}
