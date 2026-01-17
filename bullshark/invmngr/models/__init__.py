@@ -1,5 +1,6 @@
 from .category import CategoryModel
 from .inventory import InventoryModel
+from .invite import InviteModel
 from .porder import PurchaseOrderModel
 from .product import ProductModel
 from .supplier import SupplierModel

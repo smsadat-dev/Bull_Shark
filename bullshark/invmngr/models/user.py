@@ -1,12 +1,10 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+from .constants import ROLE_CHOICES
+
 class User(AbstractUser):
-    ROLE_CHOICES = (
-        ("A", "Admin"),
-        ("S", "Staff"),
-        ("V", "Viewer"),
-    )
+    
 
     role = models.CharField(
         max_length=1,

@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models import AutoField, CharField, DateTimeField, DecimalField, ForeignKey, IntegerField
+from django.db.models import CharField, DateTimeField, DecimalField, ForeignKey
 
 from .supplier import SupplierModel
 from .warehouse import WareHouseModel
