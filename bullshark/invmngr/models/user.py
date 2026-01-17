@@ -20,3 +20,12 @@ class User(AbstractUser):
 
     def __str__(self):
         return f"{self.username} ({self.role_display})"
+    
+
+class UserAuthProxyModel(User):
+
+    class Meta: 
+        proxy = True
+        app_label = 'auth'  # the trick to move under auths
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'

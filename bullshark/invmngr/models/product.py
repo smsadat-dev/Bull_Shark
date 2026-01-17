@@ -18,3 +18,7 @@ class ProductModel(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.sku})"
+    
+    class Meta: 
+        verbose_name = 'Product'
+        verbose_name_plural = 'Products'

@@ -36,3 +36,6 @@ class WareHouseModel(models.Model):
     def __str__(self):
         return f"{self.name} - {self.city}"
 
+    class Meta: 
+        verbose_name = 'Warehouse'
+        verbose_name_plural = 'Warehouses'

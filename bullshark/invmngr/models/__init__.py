@@ -4,5 +4,5 @@ from .porder import PurchaseOrderModel
 from .product import ProductModel
 from .supplier import SupplierModel
 from .transaction import TransactionModel
-from .user import User
+from .user import UserAuthProxyModel
 from .warehouse import WareHouseModel

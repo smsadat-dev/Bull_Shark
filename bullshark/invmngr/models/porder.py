@@ -23,3 +23,7 @@ class PurchaseOrderModel(models.Model):
 
     def __str__(self): 
         return f"{self.supplier}"
+
+    class Meta: 
+        verbose_name = 'Purchase Order'
+        verbose_name_plural = 'Purchase Orders'

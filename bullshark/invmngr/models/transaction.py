@@ -17,3 +17,7 @@ class TransactionModel(models.Model):
     reference = CharField(max_length=255, blank=True)
 
     created_at = DateTimeField(auto_now_add=True)
+
+    class Meta: 
+        verbose_name = 'Transaction'
+        verbose_name_plural = 'Transactions'

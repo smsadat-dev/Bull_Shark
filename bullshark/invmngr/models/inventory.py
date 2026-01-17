@@ -26,3 +26,6 @@ class InventoryModel(models.Model):
                 name="unique_product_per_warehouse"
             )
         ]
+
+        verbose_name = 'Inventory'
+        verbose_name_plural = 'Inventories'
